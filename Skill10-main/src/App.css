@@ -1,0 +1,81 @@
+.student-manager {
+  width: min(920px, 92vw);
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+.student-manager h1 {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+  color: #102a43;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.form-row input {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #cbd2d9;
+  border-radius: 8px;
+  outline: none;
+}
+
+.form-row input:focus {
+  border-color: #3e7bfa;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-btn {
+  background: #2f7d32;
+  color: #fff;
+  padding: 0.65rem 0.85rem;
+}
+
+.delete-btn {
+  background: #d14343;
+  color: #fff;
+  padding: 0.45rem 0.75rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  border: 1px solid #d9e2ec;
+  text-align: left;
+  padding: 0.7rem;
+}
+
+th {
+  background: #f0f4f8;
+  color: #102a43;
+}
+
+.empty-state {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #7b8794;
+}
+
+@media (max-width: 800px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
